@@ -8,12 +8,12 @@ const initialState = {
 
 export const bicycleReducer = (state = initialState, action) => {
   switch (action.type) {
-    case REPAIR_ADD:
+    case "repairAdded":
       return {
         ...state,
         items: [...state.items, action.payload],
       };
-    case REMOVE_REPAIR:
+    case "repairRemoved":
       return {
         ...state,
         items: state.items.splice(payload, 1),
