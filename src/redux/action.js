@@ -7,3 +7,8 @@ export const repairRemoved = (id) => ({
   type: "repairRemoved",
   payload: id,
 });
+
+export const repairUpdated = (payload) => ({
+  type: "repairUpdated",
+  payload,
+});

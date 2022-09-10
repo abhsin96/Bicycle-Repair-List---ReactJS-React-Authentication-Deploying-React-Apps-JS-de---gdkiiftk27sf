@@ -5,9 +5,9 @@ import { repairAdd } from "../redux/action";
 const Form = () => {
   const [formData, setFormData] = useState({
     id: Math.random(),
-    Owner: "",
-    Model: "",
-    Description: "",
+    owner: "",
+    model: "",
+    description: "",
     done: false,
   });
   const dispatch = useDispatch();
@@ -27,9 +27,9 @@ const Form = () => {
           dispatch(repairAdd(formData));
           setFormData({
             id: Math.random(),
-            Owner: "",
-            Model: "",
-            Description: "",
+            owner: "",
+            model: "",
+            description: "",
             done: false,
           });
         }}
@@ -38,7 +38,7 @@ const Form = () => {
         <input
           id="owner-text-box"
           type="text"
-          name="Owner"
+          name="owner"
           onChange={handleChange}
           required
         />
@@ -46,7 +46,7 @@ const Form = () => {
         <input
           id="model-text-box"
           type="text"
-          name="Model"
+          name="model"
           onChange={handleChange}
           required
         />
@@ -54,7 +54,7 @@ const Form = () => {
         <input
           id="description-text-box"
           type="text"
-          name="Description"
+          name="description"
           onChange={handleChange}
           required
         />
