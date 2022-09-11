@@ -4,7 +4,6 @@ import { repairAdd } from "../redux/action";
 
 const Form = () => {
   const [formData, setFormData] = useState({
-    id: Math.random(),
     owner: "",
     model: "",
     description: "",

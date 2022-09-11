@@ -3,9 +3,9 @@ export const repairAdd = (payload) => ({
   payload,
 });
 
-export const repairRemoved = (id) => ({
+export const repairRemoved = (payload) => ({
   type: "repairRemoved",
-  payload: id,
+  payload,
 });
 
 export const repairUpdated = (payload) => ({

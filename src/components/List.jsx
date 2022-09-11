@@ -22,7 +22,13 @@ const List = ({ owner, model, description, id }) => {
       >
         Update
       </button>
-      <button onClick={() => dispatch(repairRemoved(id))}>Delete</button>
+      <button
+        onClick={() => {
+          dispatch(repairRemoved(id));
+        }}
+      >
+        Delete
+      </button>
       <button>Done </button>
     </div>
   );

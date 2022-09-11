@@ -14,9 +14,11 @@ export const bicycleReducer = (state = initialState, action) => {
         items: [...state.items, action.payload],
       };
     case "repairRemoved":
+      let flagArray = state.items;
+      flagArray.splice(action.payload, 1);
       return {
         ...state,
-        items: state.items.splice(action.payload, 1),
+        items: flagArray,
       };
     case "repairUpdated":
       return { ...state, item: action.payload };
