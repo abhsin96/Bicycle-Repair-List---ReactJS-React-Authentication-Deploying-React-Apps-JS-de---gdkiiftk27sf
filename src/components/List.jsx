@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { repairRemoved, repairUpdated } from "../redux/action";
+import { repairRemoved, repairUpdated } from "../actions";
 
 const List = ({ owner, model, description, id }) => {
   const dispatch = useDispatch();

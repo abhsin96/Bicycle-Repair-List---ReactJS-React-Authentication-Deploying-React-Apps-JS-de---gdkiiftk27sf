@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { repairAdd } from "../redux/action";
+import { repairAdd } from "../actions";
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -25,7 +25,6 @@ const Form = () => {
           e.preventDefault();
           dispatch(repairAdd(formData));
           setFormData({
-            id: Math.random(),
             owner: "",
             model: "",
             description: "",
